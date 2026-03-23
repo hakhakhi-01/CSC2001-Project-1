@@ -8,9 +8,9 @@ This README explains how to compile, run, and test the project on Windows (Power
 ## 2. Project Layout (important files)
  
 - `src/` contains Java source files
-- `data/SAPlaceNames.csv` dataset
-- `data/SearchQueries.txt` query set (must contain 50 non-empty queries)
-- `data/SAPlaceNamesOptimal.txt` optimal BST insertion order
+- `SAPlaceNames.csv` dataset
+- `SearchQueries.txt` query set (must contain 50 non-empty queries)
+- `SAPlaceNamesOptimal.txt` optimal BST insertion order
  
 ## 3. Compile
  
@@ -126,7 +126,7 @@ java -cp src PlaceSearchArray
  
 Manual checks:
  
-1. Load `data/SAPlaceNames.csv` with N = `1000`
+1. Load `SAPlaceNames.csv` with N = `1000`
 2. Search a known place from the dataset (should return an entry)
 3. Search `__NOT_A_REAL_PLACE__` (should print `Not found`)
 4. Confirm a comparison count is printed each search
