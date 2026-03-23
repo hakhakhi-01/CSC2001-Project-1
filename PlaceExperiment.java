@@ -18,7 +18,7 @@ public class PlaceExperiment {
             throw new IllegalStateException("SearchQueries.txt must contain exactly 50 non-empty queries.");
         }
 
-        // Build these once and reuse for every N, as required.
+        // These ones are for every N as required
         List<PlaceNameEntry> dedupAsIs = loadUniqueEntriesFromCsv(csvPath);
         List<PlaceNameEntry> dedupSorted = new ArrayList<>(dedupAsIs);
         dedupSorted.sort(Comparator.comparing(PlaceNameEntry::getPlaceName, String.CASE_INSENSITIVE_ORDER));
